@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGround"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        style="@style/text_label_style"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Login"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.175"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent="0.75" />
+
+    <TextView
+        android:id="@+id/topLeftNavBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/textbox"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+
+        app:layout_constraintHeight_percent="0.175"
+        app:layout_constraintWidth_percent="0.25"
+        />
+
+    <Button
+        android:id="@+id/loginButton"
+        style="@style/button_style"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="login"
+
+        android:text="Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.125"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordBox"
+        app:layout_constraintVertical_bias="0.25"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <Button
+        android:id="@+id/createAccountButton"
+        style="@style/button_style"
+        android:layout_width="290dp"
+        android:layout_height="69dp"
+        android:background="@drawable/button_state_manager"
+        android:onClick="createAccount"
+
+        android:text="Create Account"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton"
+        app:layout_constraintVertical_bias="0.657"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <ImageButton
+        android:id="@+id/navBackButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/nav_button_state_manager"
+        android:contentDescription="Left pointing arrow to symbolize navigation back."
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.09"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintWidth_percent="0.17" />
+
+    <EditText
+        android:id="@+id/passwordBox"
+        style="@style/text_input_style"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/password_textbox"
+        android:ems="10"
+        android:hint="Password ***"
+        android:inputType="textPassword"
+        android:singleLine="true"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/emailBox"
+        app:layout_constraintTop_toBottomOf="@+id/emailBox"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintWidth_percent="0.75" />
+
+    <EditText
+        android:id="@+id/emailBox"
+        style="@style/text_input_style"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:hint="Email@gmail.com"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+        app:layout_constraintVertical_bias="0.095"
+        app:layout_constraintWidth_percent="0.75" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

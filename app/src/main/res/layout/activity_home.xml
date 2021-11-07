@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGround"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/textbox"
+        style="@style/text_label_style"
+        android:text="Home"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.175"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/topLeftNavBox"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent="0.75" />
+
+
+    <TextView
+        android:id="@+id/topLeftNavBox"
+        android:background="@drawable/textbox"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="20sp"
+        android:autoSizeMaxTextSize="30sp"
+        android:autoSizeStepGranularity="5sp"
+        app:layout_constraintHeight_percent="0.175"
+        app:layout_constraintWidth_percent="0.25"
+        />
+
+    <Button
+        android:id="@+id/StartRunButton"
+        style="@style/button_style"
+        android:layout_width="289dp"
+        android:layout_height="84dp"
+
+        android:background="@drawable/button_state_manager"
+        android:text="Start a Run"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createRouteButton"
+        app:layout_constraintVertical_bias="0.17"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <Button
+        android:id="@+id/createRouteButton"
+        style="@style/button_style"
+        android:layout_width="288dp"
+        android:layout_height="85dp"
+
+        android:background="@drawable/button_state_manager"
+        android:onClick="manageRoutes"
+        android:text="Manage Routes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/StartRunButton"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <Button
+        android:id="@+id/pastRunsButton"
+        style="@style/button_style"
+        android:layout_width="288dp"
+        android:layout_height="86dp"
+
+        android:background="@drawable/button_state_manager"
+        android:text="Past Runs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/createRouteButton"
+        app:layout_constraintTop_toBottomOf="@+id/StartRunButton"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <ImageButton
+        android:id="@+id/navBackButton"
+        android:background="@drawable/nav_button_state_manager"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/topLeftNavBox"
+        app:layout_constraintEnd_toEndOf="@+id/topLeftNavBox"
+        app:layout_constraintStart_toStartOf="@+id/topLeftNavBox"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="20sp"
+        android:autoSizeMaxTextSize="30sp"
+        android:autoSizeStepGranularity="5sp"
+        app:layout_constraintHeight_percent="0.09"
+        app:layout_constraintWidth_percent="0.17"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

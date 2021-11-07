@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGround"
+    tools:context=".RunActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="380dp"
+        android:layout_height="290dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.547"
+        tools:context=".RunActivity" />
+
+    <Button
+        android:id="@+id/startButton"
+        style="@style/button_style"
+        android:layout_width="352dp"
+        android:layout_height="131dp"
+
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.125"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stateTextBox"
+        app:layout_constraintVertical_bias="0.927"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <Button
+        android:id="@+id/pauseButton"
+        style="@style/button_style"
+        android:layout_width="143dp"
+        android:layout_height="133dp"
+
+        android:text="Pause"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.125"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.949"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <Button
+        android:id="@+id/resumeButton"
+        style="@style/button_style"
+        android:layout_width="176dp"
+        android:layout_height="129dp"
+
+        android:text="Resume"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.125"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.943"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <Button
+        android:id="@+id/finishButton"
+        style="@style/button_style"
+        android:layout_width="142dp"
+        android:layout_height="131dp"
+
+        android:text="Finish"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.125"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.949"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <Button
+        android:id="@+id/quitButton"
+        style="@style/button_style"
+        android:layout_width="133dp"
+        android:layout_height="134dp"
+
+        android:text="Quit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.125"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.949"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <EditText
+        android:id="@+id/stateTextBox"
+        style="@style/text_label_style"
+        android:layout_width="218dp"
+        android:layout_height="63dp"
+        android:ems="10"
+
+        android:text="Run State: "
+        android:textAlignment="viewStart"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topLeftNavBox"
+        app:layout_constraintVertical_bias="0.02"
+
+        />
+
+    <EditText
+        android:id="@+id/TimeTextBox"
+        style="@style/text_label_style"
+        android:layout_width="152dp"
+        android:layout_height="63dp"
+        android:ems="10"
+
+        android:text="Time:00:00"
+        android:textAlignment="viewStart"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topLeftNavBox"
+        app:layout_constraintVertical_bias="0.02"
+
+        />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        style="@style/text_label_style"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/textbox"
+        android:text="Run!"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.175"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/topLeftNavBox"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent="0.75" />
+
+
+    <TextView
+        android:id="@+id/topLeftNavBox"
+        android:background="@drawable/textbox"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="20sp"
+        android:autoSizeMaxTextSize="30sp"
+        android:autoSizeStepGranularity="5sp"
+        app:layout_constraintHeight_percent="0.175"
+        app:layout_constraintWidth_percent="0.25"
+        />
+
+
+
+    <ImageButton
+        android:id="@+id/navBackButton"
+        android:background="@drawable/nav_button_state_manager"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/topLeftNavBox"
+        app:layout_constraintEnd_toEndOf="@+id/topLeftNavBox"
+        app:layout_constraintStart_toStartOf="@+id/topLeftNavBox"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="20sp"
+        android:autoSizeMaxTextSize="30sp"
+        android:autoSizeStepGranularity="5sp"
+        app:layout_constraintHeight_percent="0.09"
+        app:layout_constraintWidth_percent="0.17"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

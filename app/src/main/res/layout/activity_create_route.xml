@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGround"
+    tools:context=".CreateRouteActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        style="@style/text_label_style"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/textbox"
+
+        android:text="Create Route"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.175"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/topLeftNavBox"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.75" />
+
+
+    <TextView
+        android:id="@+id/topLeftNavBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="292dp"
+        android:autoSizeMaxTextSize="30sp"
+        android:autoSizeMinTextSize="20sp"
+        android:autoSizeStepGranularity="5sp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/textbox"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:textSize="22sp"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/RouteNameBox"
+        app:layout_constraintHeight_percent="0.175"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <ImageButton
+        android:id="@+id/navBackButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeMaxTextSize="30sp"
+        android:autoSizeMinTextSize="20sp"
+        android:autoSizeStepGranularity="5sp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/nav_button_state_manager"
+
+        android:onClick="back"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/topLeftNavBox"
+        app:layout_constraintEnd_toEndOf="@+id/topLeftNavBox"
+        app:layout_constraintHeight_percent="0.09"
+        app:layout_constraintStart_toStartOf="@+id/topLeftNavBox"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457"
+        app:layout_constraintWidth_percent="0.17" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="375dp"
+        android:layout_height="283dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+        app:layout_constraintVertical_bias="0.033"
+        tools:context=".CreateRouteActivity" />
+
+    <EditText
+        android:id="@+id/RouteNameBox"
+        style="@style/text_input_style"
+        android:layout_width="291dp"
+        android:layout_height="69dp"
+        android:ems="10"
+        android:hint="Route Name"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <Button
+        android:id="@+id/StartRunButton"
+        style="@style/button_style"
+        android:layout_width="289dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="85dp"
+
+        android:background="@drawable/button_state_manager"
+        android:onClick="createRoute"
+        android:text="Complete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+        app:layout_constraintVertical_bias="0.861"
+        app:layout_constraintWidth_percent="0.7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

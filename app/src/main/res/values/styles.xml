@@ -1,0 +1,62 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="text_label_style">
+        <!-- Make it un-editable. (Start)-->
+        <item name="android:clickable">false</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <!-- Make it un-editable. (End) -->
+        <!-- Set graphical appearance. (Start) -->
+        <item name="android:textColor">@color/text</item>
+        <item name="android:background">@drawable/textbox</item>
+        <!-- Set graphical appearance. (End)   -->
+        <!-- Set text size/appearance. (Start) -->
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:autoSizeMaxTextSize">40sp</item>
+        <item name="android:autoSizeMinTextSize">20sp</item>
+        <item name="android:autoSizeStepGranularity">2sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">20sp</item>
+        <!-- Set graphical appearance. (End) -->
+    </style>
+
+    <style name="text_input_style">
+        <!-- Set graphical appearance. (Start) -->
+        <item name="android:textColor">@color/text</item>
+        <item name="android:background">@drawable/textbox</item>
+        <item name="android:textColorHint">@color/hint</item>
+        <!-- Set graphical appearance. (End)   -->
+        <!-- Set text size/appearance. (Start) -->
+        <item name="android:textSize">25sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">15sp</item>
+        <!-- Set graphical appearance. (End) -->
+    </style>
+
+    <style name="button_style">
+        <!-- Set graphical appearance. (Start) -->
+        <item name="android:textColor">@color/text</item>
+        <item name="android:background">@drawable/button_state_manager</item>
+        <!-- Set graphical appearance. (End)   -->
+        <!-- Set text size/appearance. (Start) -->
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:autoSizeMaxTextSize">30sp</item>
+        <item name="android:autoSizeMinTextSize">20sp</item>
+        <item name="android:autoSizeStepGranularity">2sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">15sp</item>
+        <!-- Set graphical appearance. (End) -->
+    </style>
+
+</resources>

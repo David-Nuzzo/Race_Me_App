@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "18765978767",
+    "project_id": "racemeapp-adc36",
+    "storage_bucket": "racemeapp-adc36.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18765978767:android:1ef2b617a968b466b9a4fa",
+        "android_client_info": {
+          "package_name": "com.example.raceme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "18765978767-k6bcdihmjcufos250andqakoucmnsmr5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.raceme",
+            "certificate_hash": "30c1cd987d3054e35ddae7a6d1eb8488a8e0616c"
+          }
+        },
+        {
+          "client_id": "18765978767-6f829aahqjv234vfcnikd9u1bc305teo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANgSaIgFlirAux6qHiuEDvHOlPj4goG0o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "18765978767-6f829aahqjv234vfcnikd9u1bc305teo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
